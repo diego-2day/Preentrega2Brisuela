@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
-
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /*Header*/
 header{
     width: 100%;
     height: 30%;
+    display: flex;
+    justify-content: center;
     background-color: black;
     color:aliceblue;
     font-family: 'Dela Gothic One', cursive;
 }
- 
+
 blockquote{
     width: 100%;
-    margin: 0;
+    margin: 2% 0;
     padding: 0;
     display: flex;
 }
 /*Frases*/
 span{
+    border: aliceblue solid 2px;
+    padding: 2%;
     margin: 0 auto;
 }
 /*Navegador*/
@@ -34,12 +40,7 @@ nav{
     width: 50%;
     height: 50%;
     margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-/*Tablero*/
-section{
-    background-color: saddlebrown;
+    display: contents;
 }
 
 /*Tarea*/
@@ -47,7 +48,7 @@ section{
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: tomato;
+    background-color: aliceblue;
 }
 
 tr{
@@ -60,4 +61,8 @@ td{
     border: black solid 2px;
     padding: 0;
     margin: 0;
+}
+
+aside{
+    margin: 0 40%;
 }
