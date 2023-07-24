@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music saver</title>
+    <title>Webstar</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/index.js"></script>
-    <script src="js/cancionero.js"></script>
+    <!-- Titulo --> 
+
+    <header>
+        <h1>Webstar</h1>
+    </header>
+    
+    <!-- Frases -->
+    <blockquote>
+        <span>Logramos hacer las cosas</span>
+    </blockquote>
+    <!-- nav var -->
+    <nav>
+        <strong>Tareas</strong>
+
+        <form class="menu-opciones">
+            <input type="radio" name="filtrado" id="opcion1">
+            <label for="opcion1">Ordenar por seguidores(menor a mayor)</label><br>
+            <input type="radio" id="opcion2" name="filtrado">
+            <label for="opcion2">Ordenar por edad(menor a mayor)</label><br>
+            <input type="radio" id="opcion3" name="filtrado">
+            <label for="opcion3">Ordenar por albumes(menor a mayor)</label>
+          </form>
+          
+    </nav>
+
+    <!-- Lista de canciones -->
+
+    <section>
+        <table id="tablero">
+        </table>
+    </section>
+
+    <h3>Eres una estrella?</h3>
+    <p>Coloca la informacion en los campos para registrarte:</p>
+    <form>
+        <label for="nombre">Nombre y apellido:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad"><br>
+        <label for="follows">Followers:</label><br>
+        <input type="number" id="follows" name="follows"><br>
+        <label for="albums">Albums:</label><br>
+        <input type="number" id="albums" name="albums"><br>
+        <input type="button" value="Submit" id="submit">
+        <input type="button" value="Delet" id="delet">
+      </form>
+      <!-- Links -->
+      <script src="js/database.js"></script>
+      <script src="js/index.js"></script>
+       <script src="js/filtrados.js"></script> 
 </body>
 </html>
